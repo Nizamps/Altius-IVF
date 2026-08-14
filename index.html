@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Altius IVF & Maternity Tracker</title>
+<link rel="icon" type="image/jpeg" href="logo.jpg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Manrope:wght@700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css?v=20260814-2">
+</head>
+<body>
+<header class="topbar">
+  <div class="topbar-left">
+    <img src="logo.jpg" alt="Altius Hospitals" class="topbar-logo">
+    <div class="topbar-titles"><h1>Altius IVF &amp; Maternity Tracker</h1><p>IVF + Maternity — Programme &amp; Trimester Tracking</p></div>
+  </div>
+  <div class="topbar-right"><button class="pill-link" data-action="back-dashboard">All Patients</button></div>
+</header>
+<main id="app"></main>
+<div id="modal-root"></div>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+window.SUPABASE_CONFIG = {
+  url: "https://yhnsgrwoczwhckkpzwcj.supabase.co",
+  publishableKey: "sb_publishable_1AF8PZ9QJoDf5qRZwFBPow_bFMc7Ar3"
+};
+</script>
+<script src="supabase-config.js?v=20260814-2"></script>
+<script src="xlsx.full.min.js?v=20260814-2"></script>
+<script src="data.js?v=20260814-2"></script>
+<script src="storage.js?v=20260814-2"></script>
+<script src="export.js?v=20260814-2"></script>
+<script src="app.js?v=20260814-2"></script>
+</body>
+</html>
